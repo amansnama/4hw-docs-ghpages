@@ -1,2 +1,5 @@
 # Ignore mkdocs /site/
 **/site/
+
+# Ignore __pycache__
+**/__pycache__/

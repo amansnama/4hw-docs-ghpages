@@ -1,7 +1,24 @@
-# All functions taken from "Python Numerical Methods", Kong, Siauw and Bayen
-# https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html
+"""Defines three functions.
 
-def my_adder(a: int|float, b: int|float, c: int|float) -> int|float:
+All functions taken from "Python Numerical Methods", Kong, Siauw and Bayen
+https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html
+
+- `my_adder(a,b,c)` - Returns sum of three numbers.
+- `my_thermo_stat(temp, desired_temp)` - Change status of thermostat.
+- `have_digits(s)` - Checks if string s has digits.
+
+Examples:
+    >>> from some_functions import example_functions
+    >>> example_functions.my_adder(1,2,3)
+    6
+    >>> example_functions.my_thermo_stat(75,69)
+    'AC'
+    >>> example_functions.have_digits('Jack123')
+    1
+
+"""
+
+def my_adder(a: int | float, b: int | float, c: int | float) -> int | float:
     """Add three numbers.
 
     function to sum the 3 numbers
@@ -10,17 +27,13 @@ def my_adder(a: int|float, b: int|float, c: int|float) -> int|float:
 
     Output: the sum of a, b, and c
 
-    author: Aman Shrestha
-
-    date: Sep 20, 2024
-
     Args:
         a (int | float): Number 1
         b (int | float): Number 2
         c (int | float): Number 3
 
     Returns:
-        int|float: Sum
+        The sum
     """
     # this is the summation
     out = a + b + c
@@ -34,17 +47,13 @@ def my_thermo_stat(temp: int | float, desired_temp: int | float) -> str:
     Changes the status of the thermostat based on 
     temperature and desired temperature
 
-    author: Aman Shrestha
-
-    date: Sep 20, 2024
-
     Args:
         temp (int | float): Current temperature
         desired_temp (int | float): Temperature to set to.
 
     Returns:
         str: Status of thermostat
-    """ 
+    """
     if temp < desired_temp - 5:
         status = 'Heat'
     elif temp > desired_temp + 5:
@@ -61,9 +70,8 @@ def have_digits(s: str) -> int:
         s (str): String to check
 
     Returns:
-        out: 1 if s has digits
-             0 if s has no digits
-    """    
+        out: 1 if s has digits and 0 if s has no digits
+    """
 
     out = 0
 
