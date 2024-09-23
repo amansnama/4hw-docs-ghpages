@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# CMSE 890-602 HW4
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Documentation of example functions and my functions.
 
-## Commands
+## Contents
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+1. [Tutorials](tutorials.md)
+2. [How-To Guides](how-to-guides.md)
+3. [Reference](reference.md)
+4. [Explanation](explanation.md)
 
-## Project layout
+## Project Overview
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+::: some_functions

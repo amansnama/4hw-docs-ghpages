@@ -1,1 +1,15 @@
-site_name: My Docs
+site_name: Documentation of CMSE890-602 HW4
+
+theme:
+  name: "material"
+
+plugins:
+- search
+- mkdocstrings
+
+nav:
+  - Docs using MkDocs and MkDocStrings: index.md
+  - tutorials.md
+  - How-To Guides: how-to-guides.md
+  - reference.md
+  - explanation.md
