@@ -1,0 +1,17 @@
+# original code from https://blog.elmah.io/deploying-a-mkdocs-documentation-site-with-github-actions/ (I've edited it a bit)
+# AmanS - copied from https://github.com/billspat/example-python-auto-documentation-with-mkdocstrings/blob/main/.github/workflows/deploy_documentation.yml
+name: build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force --clean --verbose
